@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Your Account - MAPmobile Co</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background-color: #050505;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #0a0a0a;
+            border: 1px solid #1a1a1a;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        .header {
+            background: linear-gradient(135deg, #0066ff 0%, #0044aa 100%);
+            padding: 60px 40px;
+            text-align: center;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        .logo span {
+            color: #99ccff;
+        }
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+        p {
+            font-size: 16px;
+            color: #a0a0a0;
+            margin-bottom: 30px;
+        }
+        .button {
+            display: inline-block;
+            padding: 18px 40px;
+            background: linear-gradient(135deg, #0066ff 0%, #0044aa 100%);
+            color: #ffffff !important;
+            text-decoration: none;
+            border-radius: 16px;
+            font-weight: 800;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 20px rgba(0, 102, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        .footer {
+            padding: 30px 40px;
+            background-color: #050505;
+            text-align: center;
+            border-top: 1px solid #1a1a1a;
+        }
+        .footer p {
+            font-size: 12px;
+            color: #444444;
+            margin: 5px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+        .accent {
+            color: #0066ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">MAP<span>mobile</span> CO</div>
+            <div style="font-size: 14px; font-weight: 700; letter-spacing: 3px; color: rgba(255,255,255,0.6); text-transform: uppercase;">Premium Mobile Electronics</div>
+        </div>
+        <div class="content">
+            <h1>Verify Your Identity</h1>
+            <p>Welcome to the MAPmobile Co community. You're just one step away from accessing professional-grade mobile electronics and expert installation services.</p>
+            <a href="{{ .ConfirmationURL }}" class="button">Confirm Account</a>
+            <p style="margin-top: 30px; font-size: 14px;">If the button above doesn't work, copy and paste this link into your browser:</p>
+            <p style="font-size: 12px; color: #444444; word-break: break-all;">{{ .ConfirmationURL }}</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2025 MAPmobile CO. ALL RIGHTS RESERVED.</p>
+            <p>PROFESSIONAL INSTALLATION | PREMIUM GEAR</p>
+        </div>
+    </div>
+</body>
+</html>
